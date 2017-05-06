@@ -684,34 +684,7 @@ class NetworkSimulator {
       }
 
     }
-    /*
-    def send(inputIP: String, inputCommand: String, inputData: String){
-      
-      var myPDU = new PDU()
-      myPDU.packet(0) = currentDevice.asInstanceOf[PCClass].port.IPAddr
-      myPDU.packet(1) = inputIP
-      myPDU.packet(2) = currentDevice.asInstanceOf[PCClass].port.MACAddr
-      //myPDU.packet(3) = currentDevice.asInstanceOf[PCClass].ARPTable.get(inputIP).get
     
-      myPDU.packet(5) = inputData
-      myPDU.packet(6) = null
-    
-      myPDU.packet(7) = currentDevice.asInstanceOf[PCClass].port
-      myPDU.packet(8) = currentDevice
-      
-      if(inputCommand == "storeThis"){
-        myPDU.packet(4) = "storeThis"
-        sendPDU(myPDU)
-      }
-      else if(inputCommand == "replyWith"){
-        myPDU.packet(4) = "replyWith"
-        sendPDU(myPDU)
-      }
-      else{
-        println("Mispelled command - please try again.")
-      }      
-    }
-    */
     
     def inspect{
       //inspect [mactable | arptable | routingtable]
